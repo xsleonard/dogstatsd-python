@@ -5,6 +5,13 @@ A DogStatsd Python client.
 
 [![Build Status](https://secure.travis-ci.org/DataDog/dogstatsd-python.png)](http://travis-ci.org/DataDog/dogstatsd-python)
 
+
+Whats in this fork
+==================
+
+* Module has been renamed to dogstatsd from statsd to avoid conflicts with other statsd modules
+
+
 Quick Start Guide
 -----------------
 
@@ -20,7 +27,7 @@ Then start instrumenting your code:
 
 ``` python
 # Import the module.
-from statsd import statsd
+from dogstatsd import statsd
 
 # Optionally, configure the host and port if you're running Statsd on a
 # non-standard port.

@@ -9,8 +9,8 @@ import time
 
 from nose import tools as t
 
-from statsd import DogStatsd
-import statsd
+from dogstatsd import DogStatsd
+import dogstatsd
 
 
 class FakeSocket(object):
@@ -143,7 +143,7 @@ class TestDogStatsd(object):
         self.assert_almost_equal(0.5, float(value), 0.1)
 
     def test_module_level_instance(self):
-        t.assert_true(isinstance(statsd.statsd, statsd.DogStatsd))
+        t.assert_true(isinstance(dogstatsd.statsd, dogstatsd.DogStatsd))
 
 
 if __name__ == '__main__':
